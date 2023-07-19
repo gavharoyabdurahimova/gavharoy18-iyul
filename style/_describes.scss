@@ -1,0 +1,59 @@
+.describes {
+  background-color: $color_bacground;
+  margin-top: 20px;
+  .nutrional {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    .values {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 195px;
+
+      .yellow_circle {
+        background-color: $color-yellow;
+        color: $color-black;
+        padding: 10px;
+        border-radius: 50%;
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 155.556%;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.1px;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .Nutritional_Values {
+    display: flex;
+    gap: 61px;
+  }
+  .describes {
+    margin-top: 32px;
+    .nutrional {
+      align-items: start;
+      padding: 39px 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px){
+  .describes{
+    margin-top: 0;
+    .nutrional{
+      padding: 64px 0;
+    }
+  }
+  .Nutritional_Values{
+    gap: 30px;
+  }
+}

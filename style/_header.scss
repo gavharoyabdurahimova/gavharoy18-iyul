@@ -1,0 +1,178 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  .nav_left {
+    display: none;
+  }
+  .nav_right {
+    display: none;
+  }
+  .fa_barss {
+    background-color: black;
+    padding: 6px 8px;
+    border-radius: 50%;
+  }
+}
+.double_chees {
+  margin-bottom: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: $color-black;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    max-width: 350px;
+  }
+  p {
+    color: $color-black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 21px;
+    p {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    button {
+      background-color: $color-yellow;
+      color: $color-black;
+      padding: 11px 42px;
+      border-radius: 30px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .count_one {
+    margin-bottom: 20px;
+  }
+}
+.count_two {
+  display: none;
+}
+@media screen and (min-width: 644px) {
+  .double_chees {
+    .recipes {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+  .count_one {
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .navbar {
+    .nav_left {
+      display: block;
+
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 24px;
+
+        a {
+          color: $color-black;
+          text-align: right;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0.1px;
+        }
+      }
+    }
+    .nav_right {
+      display: block;
+      button {
+        border-radius: 30px;
+        background: #000;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 13px 35px;
+        color: $color-white;
+      }
+    }
+    .fa_barss {
+      display: none;
+    }
+  }
+  .double_chees {
+    padding: 32px 0;
+
+    h1 {
+      font-size: 50px;
+      max-width: 460px;
+    }
+    p {
+      font-size: 24px;
+      max-width: 630px;
+    }
+    .recipes {
+      button {
+        font-weight: 500;
+        padding: 13px 52px;
+      }
+    }
+  }
+  .count_two {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .count_one {
+    img {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+ .navbar{
+  margin:0 -58px;
+ }
+  .hero_section {
+    display: flex;
+    padding: 64px 0;
+    gap: 130px;
+  }
+  .count_one {
+    img {
+      display: block;
+    }
+  }
+  .count_two {
+    display: none;
+  }
+  .double_chees {
+  h1{
+    text-align: start;
+  }
+  p{
+    text-align: start;
+  }
+  .recipes{
+    gap: 20px;
+    p{
+      text-align: start;
+    }
+  }
+  }
+}

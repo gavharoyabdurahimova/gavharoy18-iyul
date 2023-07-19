@@ -1,0 +1,136 @@
+footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 50px 0;
+  .heading {
+    h2 {
+      font-family: "Kulim Park", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+
+  .double_cb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .first_column_left {
+    display: flex;
+    align-items: start;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .first_column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .page_bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 142.857%;
+        color: $color-white;
+      }
+    }
+  }
+  .first_column_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0.1px;
+    }
+    button {
+      width: 100%;
+      padding: 16px 24px;
+      background-color: #262626;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.1px;
+      color: $color-white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      i {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 142.857%;
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 644px) {
+  footer {
+    .heading {
+      width: 100%;
+      h2 {
+        text-align: start;
+        flex: 1;
+      }
+    }
+
+    .double_cb {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .first_column_left {
+      flex: 3.5;
+      justify-content: space-between;
+      column-gap: 0;
+      .page_bottom {
+        align-items: start;
+      }
+      .first_column {
+        align-items: start;
+        min-width: 135px;
+      }
+    }
+    .first_column_right {
+      flex: 2;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 96px 0;
+    .double_cb {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+    }
+    .first_column_left {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 55px;
+    }
+    .first_column_right {
+      align-items: start;
+      p {
+        text-align: start;
+      }
+    }
+  }
+}

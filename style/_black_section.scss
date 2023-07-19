@@ -1,0 +1,143 @@
+.black_section {
+  background-color: $color-black;
+  padding: 24px 0;
+  color: $color-white;
+
+  .double_program {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .black_section_right {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .black_right_top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 133.333%;
+        letter-spacing: -0.1px;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        max-width: 342px;
+      }
+    }
+    .weeks {
+      display: none;
+    }
+    .zoom_weeks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 171.429%;
+        letter-spacing: 0.1px;
+      }
+    }
+  }
+  .mental_helath_three {
+    img {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 644px) {
+  .black_section_left {
+    img {
+      width: 100%;
+    }
+  }
+
+  .black_section {
+    .double_program {
+      .black_right_top {
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .black_section {
+    padding: 32px 0 64px;
+    .mental_helath_three {
+      img {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .double_program {
+      gap: 64px;
+      .black_section_right {
+        flex-direction: row;
+        gap: 129px;
+      }
+      .black_right_top {
+        align-items: start;
+        p {
+          text-align: start;
+          max-width: 415px;
+        }
+        h2 {
+          max-width: 415px;
+          text-align: start;
+        }
+      }
+    }
+  }
+  .black_section_left {
+    img {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .black_section {
+    padding: 96px 0;
+    .double_program {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .black_section_right {
+        flex-direction: column;
+        gap: 16px;
+        align-items: start;
+        max-width: 415px;
+      }
+      .zoom_weeks {
+        display: none;
+      }
+      .weeks {
+        display: block;
+      }
+    }
+    .mental_helath_three {
+      img {
+        display: none;
+      }
+    }
+  }
+  .black_section_left {
+    img {
+      display: block;
+      max-width: 503px;
+    }
+  }
+}

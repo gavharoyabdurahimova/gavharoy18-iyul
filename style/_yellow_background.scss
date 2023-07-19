@@ -1,0 +1,74 @@
+.yellow_background {
+  background-image: url(../images/foot_top_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  padding: 192px 0 150px;
+  .yourself {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0.1px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: #000;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 200%;
+      letter-spacing: -0.5px;
+      color: $color-black;
+    }
+    button {
+      margin: 32px 0;
+      padding: 6px 16px;
+      border-radius: 24px;
+      background-color: $color-white;
+      color: $color-black;
+    }
+  }
+}
+@media screen and (min-width: 644px) {
+  .yellow_background {
+    .yourself {
+      h2 {
+        font-size: 34px;
+        line-height: 141.176%;
+      }
+      button {
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .yellow_background {
+    .yourself {
+      h2 {
+        max-width: 600px;
+      }
+      button {
+        padding: 8px 16px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .yellow_background {
+    .yourself {
+      padding: 32px 0 px 100px;
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+  
+}

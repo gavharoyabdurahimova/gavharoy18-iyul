@@ -1,0 +1,77 @@
+.description {
+  padding: 30px 0;
+
+  .description_info:nth-child(2) {
+    display: none;
+  }
+  .description_info:last-child {
+    display: none;
+  }
+  .description_info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 56px;
+    padding: 24px;
+    background-color: $color_bacground;
+    border-radius: 8px;
+    justify-content: space-between;
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 155.556%;
+      color: $color-black;
+    }
+    .name_img {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 16px;
+    }
+  }
+  .three_circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 644px) {
+  .description_thre {
+    display: flex;
+    gap: 16px;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .description_info:nth-child(2) {
+      display: block;
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .description {
+    max-width: 100%;
+    .description_info:last-child {
+      display: block;
+      display: flex;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description {
+    padding: 96px 0;
+    max-width: 1000px;
+    .three_circle {
+      display: none;
+    }
+  }
+  .description_thre {
+    gap: 30px;
+  }
+}
