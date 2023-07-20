@@ -374,6 +374,7 @@ img {
   }
   .black_section .double_program .weeks {
     display: block;
+    margin: 0 20px;
   }
   .black_section .mental_helath_three img {
     display: none;
